@@ -1,0 +1,153 @@
+💸 PennyPro
+Expense Tracking That Feels Alive
+<p align="center"> <img src="screenshots/landing.png" width="100%"> </p>
+
+PennyPro is a modern fintech-grade expense & income tracking SaaS that helps users visualize, manage, and understand their money through secure login, real-time analytics, and an interactive dashboard.
+
+Built with Spring Boot, Google OAuth, JWT Security, and a premium UI, PennyPro feels like a real startup product — not just a college project.
+
+🚀 Why PennyPro?
+
+Most expense trackers are boring tables.
+PennyPro turns your finances into a living dashboard with:
+
+Beautiful charts
+
+Real-time profit/loss
+
+Category insights
+
+Secure Google login
+
+It looks, feels, and behaves like a real fintech web app.
+
+
+🖥️ Screenshots
+🌐 Landing Page
+<p align="center"> <img src="screenshots/landing.png" width="90%"> </p>
+🔐 Login (Google + Email)
+<p align="center"> <img src="screenshots/login.png" width="60%"> </p>
+📊 Dashboard
+<p align="center"> <img src="screenshots/dashboard.png" width="90%"> </p>
+💰 Income & Expense Tables
+<p align="center"> <img src="screenshots/tables.png" width="90%"> </p>
+
+
+✨ Features
+🔑 Authentication
+
+Google OAuth 2.0
+
+JWT-based secure API access
+
+Session & cookie protection
+
+Logout & back-button prevention
+
+💸 Expense & Income Tracking
+
+Add income and expenses
+
+Category-based tracking
+
+One-click delete
+
+Auto calculation of totals
+
+📈 Financial Analytics
+
+Income vs Expense bar chart
+
+Profit/Loss donut chart
+
+Live data updates
+
+Visual dashboards
+
+🎨 Premium UI
+
+Glassmorphism cards
+
+Gradient fintech theme
+
+Fully responsive
+
+Smooth modern look
+
+🧠 How It Works
+
+User clicks Continue with Google
+
+Google OAuth authenticates user
+
+Spring Boot creates a secure session
+
+A JWT token is issued
+
+Frontend uses JWT to call protected APIs
+
+Dashboard loads real-time financial data
+
+Everything is user-specific & secure.
+
+🔐 Security Architecture
+Layer	Purpose
+Google OAuth	User authentication
+JWT	Secure API access
+Spring Security	Route protection
+BCrypt	Password encryption
+CORS & CSRF	Request safety
+
+PennyPro follows real SaaS-grade security design.
+
+🛠 Tech Stack
+Layer	Technology
+Backend	Spring Boot
+Security	Spring Security, OAuth2, JWT
+Database	PostgreSQL
+Frontend	HTML, CSS, JavaScript
+Charts	Chart.js
+Auth	Google Sign-In
+UI	Custom SaaS Design
+🎯 Who is this for?
+
+Students tracking expenses
+
+Freelancers managing income
+
+Salary + investment users
+
+Anyone who wants clarity over money
+
+🌟 What makes PennyPro special?
+
+This is not a simple CRUD app.
+
+PennyPro is:
+
+Secure like a bank
+
+Visual like a dashboard
+
+Modern like a startup
+
+👩‍💻 Developer
+
+Built with ❤️ by Priya Manisha
+Full-Stack Developer | FinTech & AI Engineer
+
+🔮 Future Roadmap
+
+Monthly reports
+
+Budget limits
+
+PDF export
+
+AI-based spending insights
+
+Mobile app
+
+📜 License
+
+Open Source – free to use, modify, and build on.
