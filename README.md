@@ -1,6 +1,7 @@
 💸 PennyPro
 Expense Tracking That Feels Alive
-<p align="center"> <img src="screenshots/landing.png" width="100%"> </p>
+<img width="1600" height="731" alt="image" src="https://github.com/user-attachments/assets/e2604658-8f46-4de4-83cb-9b5b6f6b9178" />
+
 
 PennyPro is a modern fintech-grade expense & income tracking SaaS that helps users visualize, manage, and understand their money through secure login, real-time analytics, and an interactive dashboard.
 
@@ -24,13 +25,16 @@ It looks, feels, and behaves like a real fintech web app.
 
 🖥️ Screenshots
 🌐 Landing Page
-<p align="center"> <img src="screenshots/landing.png" width="90%"> </p>
+<img width="1600" height="731" alt="image" src="https://github.com/user-attachments/assets/2c0ae565-5c18-445a-b40b-c19527c5dc5a" />
+
 🔐 Login (Google + Email)
-<p align="center"> <img src="screenshots/login.png" width="60%"> </p>
+<img width="915" height="868" alt="image" src="https://github.com/user-attachments/assets/74d1a26f-6ada-495a-8b5f-c120adccc032" />
+
 📊 Dashboard
-<p align="center"> <img src="screenshots/dashboard.png" width="90%"> </p>
+<img width="1600" height="746" alt="image" src="https://github.com/user-attachments/assets/c5ba1328-9f7d-4ed1-a084-8dcb4d1942f9" />
+
 💰 Income & Expense Tables
-<p align="center"> <img src="screenshots/tables.png" width="90%"> </p>
+<img width="1600" height="460" alt="image" src="https://github.com/user-attachments/assets/2dbe9adf-d1ab-451d-ac52-2535480eeae4" />
 
 
 ✨ Features
