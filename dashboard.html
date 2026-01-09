@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PennyPro | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>PennyPro</h2>
+    <nav>
+      <a class="active">Dashboard</a>
+      <a onclick="sortExpenses()">Sort Expenses</a>
+      <a onclick="sortIncome()">Sort Income</a>
+    </nav>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- CARDS -->
+    <section class="cards">
+      <div class="card purple">
+        <p>Total Income</p>
+        <h3 id="totalIncome">₹ --</h3>
+      </div>
+      <div class="card blue">
+        <p>Total Expense</p>
+        <h3 id="totalExpense">₹ --</h3>
+      </div>
+      <div class="card pink">
+        <p>Profit / Loss</p>
+        <h3 id="pnl">₹ --</h3>
+      </div>
+      <div class="card orange">
+        <p>Total Records</p>
+        <h3 id="totalRecords">--</h3>
+      </div>
+    </section>
+
+    <!-- CHARTS -->
+    <section class="charts">
+      <div class="chart large">
+        <h4>Income vs Expense</h4>
+        <canvas id="lineChart" height="260"></canvas>
+      </div>
+
+      <div class="chart small">
+        <h4>Analytics</h4>
+        <canvas id="donutChart" height="260"></canvas>
+      </div>
+    </section>
+
+    <!-- TABLES -->
+    <section class="tables">
+
+      <!-- EXPENSE -->
+      <div class="table-card">
+        <div class="table-header">
+          <h4>Expenses</h4>
+          <button onclick="openExpenseModal()">Add Expense</button>
+        </div>
+
+        <select onchange="filterExpense(this.value)">
+          <option value="">Filter Category</option>
+          <option value="PERSONAL">PERSONAL</option>
+          <option value="SURVIVAL">SURVIVAL</option>
+          <option value="INVESTMENT">INVESTMENT</option>
+        </select>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Category</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="expenseTable"></tbody>
+        </table>
+      </div>
+
+      <!-- INCOME -->
+      <div class="table-card">
+        <div class="table-header">
+          <h4>Income</h4>
+          <button onclick="openIncomeModal()">Add Income</button>
+        </div>
+
+        <select onchange="filterIncome(this.value)">
+          <option value="">Filter Source</option>
+          <option value="SALARY">SALARY</option>
+          <option value="FROM_INVESTMENT">FROM_INVESTMENT</option>
+          <option value="FROM_TRADING">FROM_TRADING</option>
+        </select>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Source</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="incomeTable"></tbody>
+        </table>
+      </div>
+
+    </section>
+  </main>
+</div>
+
+<!-- EXPENSE MODAL -->
+<div class="modal" id="expenseModal">
+  <div class="modal-card">
+    <h3>Add Expense</h3>
+    <input id="expDesc" placeholder="Description" />
+    <select id="expCat">
+      <option value="PERSONAL">PERSONAL</option>
+      <option value="SURVIVAL">SURVIVAL</option>
+      <option value="INVESTMENT">INVESTMENT</option>
+    </select>
+    <input id="expAmt" type="number" placeholder="Amount" />
+    <input id="expDate" type="date" />
+    <div class="modal-actions">
+      <button onclick="saveExpense()">Save</button>
+      <button class="cancel" onclick="closeExpenseModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- INCOME MODAL -->
+<div class="modal" id="incomeModal">
+  <div class="modal-card">
+    <h3>Add Income</h3>
+    <input id="incDesc" placeholder="Description" />
+    <select id="incSrc">
+      <option value="SALARY">SALARY</option>
+      <option value="FROM_INVESTMENT">FROM_INVESTMENT</option>
+      <option value="FROM_TRADING">FROM_TRADING</option>
+    </select>
+    <input id="incAmt" type="number" placeholder="Amount" />
+    <input id="incDate" type="date" />
+    <div class="modal-actions">
+      <button onclick="saveIncome()">Save</button>
+      <button class="cancel" onclick="closeIncomeModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

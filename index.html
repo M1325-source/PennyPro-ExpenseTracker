@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PennyPro — Expense Tracking That Feels Alive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="aurora"></div>
+<div class="orbs">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Navbar -->
+<header class="nav">
+  <h2>PennyPro</h2>
+  <nav>
+    <a href="#">Product</a>
+    <a href="#">Security</a>
+    <a href="#">Pricing</a>
+    <button onclick="openAuth()">Get Started</button>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>
+      Expense Tracking<br>
+      <span>That Feels Alive</span>
+    </h1>
+    <p>
+      Not just numbers. A living, breathing financial system
+      built with motion, intelligence, and clarity.
+    </p>
+    <div class="cta">
+      <button class="primary" onclick="openAuth()">Launch App</button>
+      <button class="secondary">Watch Demo</button>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/dashboard.png" alt="Dashboard Preview">
+  </div>
+</section>
+
+<!-- Power Section -->
+<section class="power">
+  <div class="power-card">
+    <h3>Real-Time Flow</h3>
+    <p>Expenses animate as they happen.</p>
+  </div>
+  <div class="power-card">
+    <h3>Visual Intelligence</h3>
+    <p>Charts and insights that feel alive.</p>
+  </div>
+  <div class="power-card">
+    <h3>Enterprise Security</h3>
+    <p>Silent. Strong. Always on.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2026 PennyPro • Crafted with Motion
+</footer>
+
+<!-- Redirect Script -->
+<script>
+  function openAuth() {
+    window.location.href = "auth.html";
+  }
+</script>
+
+</body>
+</html>
